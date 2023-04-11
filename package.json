@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/codesandbox-app/static-template.git"
   },
-  "keywords": ["text-to-speech", "tts", "html", "js", "javascript"],
+  "keywords": [
+    "text-to-speech",
+    "tts",
+    "html",
+    "js",
+    "javascript"
+  ],
   "author": "Chi Zu",
   "license": "UNLICENSED",
   "bugs": {
@@ -19,6 +25,6 @@
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
-    "serve": "^11.2.0"
+    "serve": "^11.3.2"
   }
 }
