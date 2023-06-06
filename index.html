@@ -7,20 +7,49 @@
     <title>Simple Text to Speech</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+Ahom&family=Noto+Serif+Armenian&family=Noto+Serif+Balinese&family=Noto+Serif+Bengali&family=Noto+Serif+Devanagari&family=Noto+Serif+Dogra&family=Noto+Serif+Ethiopic&family=Noto+Serif+Georgian&family=Noto+Serif+Grantha&family=Noto+Serif+Gujarati&family=Noto+Serif+Gurmukhi&family=Noto+Serif+HK&family=Noto+Serif+Hebrew&family=Noto+Serif+JP&family=Noto+Serif+KR&family=Noto+Serif+Kannada&family=Noto+Serif+Khmer&family=Noto+Serif+Khojki:wght@500&family=Noto+Serif+Lao&family=Noto+Serif+Malayalam&family=Noto+Serif+Myanmar&family=Noto+Serif+NP+Hmong&family=Noto+Serif+Oriya&family=Noto+Serif+SC&family=Noto+Serif+Sinhala&family=Noto+Serif+TC&family=Noto+Serif+Tamil&family=Noto+Serif+Tangut&family=Noto+Serif+Telugu&family=Noto+Serif+Thai&family=Noto+Serif+Tibetan&family=Noto+Serif+Toto:wght@500&family=Noto+Serif+Yezidi&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <noscript>
       <p>
-        <strong>JavaScript is disabled.</strong><br />Enable JavaScript for this project to work.
+        <strong>JavaScript is disabled.</strong><br />Enable JavaScript for this
+        project to work.
       </p>
     </noscript>
-    <div><textarea id="text" placeholder="Text to read here."></textarea></div>
     <div>
-      <abbr title="Only gives you the voices already installed on this device." class="cursorhelp"><label for="voices_l">Voice</label></abbr>: 
+      <textarea
+        style="
+          font-family: Noto Serif, Noto Serif Armenian, Noto Serif Balinese,
+            Noto Serif Bengali, Noto Serif Devanagari, Noto Serif Dogra,
+            Noto Serif Ethiopic, Noto Serif Georgian, Noto Serif Grantha,
+            Noto Serif Gujarati, Noto Serif Gurmukhi, Noto Serif HK,
+            Noto Serif Hebrew, Noto Serif JP, Noto Serif KR, Noto Serif Kannada,
+            Noto Serif Khmer, Noto Serif Khojki, Noto Serif Lao,
+            Noto Serif Malayalam, Noto Serif Myanmar, Noto Serif Np Hmong,
+            Noto Serif Oriya, Noto Serif SC, Noto Serif Sinhala, Noto Serif TC,
+            Noto Serif Tamil, Noto Serif Tangut, Noto Serif Telugu,
+            Noto Serif Thai, Noto Serif Tibetan, Noto Serif Toto,
+            Noto Serif Yezidi;
+        "
+        id="text"
+        placeholder="Text to read here."
+      ></textarea>
+    </div>
+    <div>
+      <abbr
+        title="Only gives you the voices already installed on this device."
+        class="cursorhelp"
+        ><label for="voices_l">Voice</label></abbr
+      >:
       <select id="voices_l"></select>
     </div>
     <div>
-      <label for="pitch">Pitch</label>: 
+      <label for="pitch">Pitch</label>:
       <input
         value="1"
         id="pitch"
@@ -38,7 +67,7 @@
       />
     </div>
     <div>
-      <label for="_v">Volume</label>: 
+      <label for="_v">Volume</label>:
       <input
         type="range"
         id="volume"
@@ -56,7 +85,7 @@
       />
     </div>
     <div>
-      <label for="rate">Rate</label>: 
+      <label for="rate">Rate</label>:
       <input
         type="range"
         id="rate"
